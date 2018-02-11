@@ -1,4 +1,4 @@
-CREATE TABLE memberOf (tid INT NOT NULL, sid INT NOT NULL, dateJoined DATE, role VARCHAR(60), PRIMARY KEY (sid, tid)); 
+CREATE TABLE memberOf (tid INT, sid INT NOT NULL, dateJoined DATE, role VARCHAR(60), PRIMARY KEY (sid, tid)); 
 
 insert into memberOf (tid, sid, dateJoined, role) values (532, 467, '2018-02-17', 'nulla');
 insert into memberOf (tid, sid, dateJoined, role) values (325, 467, '2018-02-12', 'sapien in');
