@@ -1,26 +1,27 @@
 CREATE TABLE teams (
-    tid         INT     PRIMARY KEY
-    leaderId    INT     NOT NULL,
-    noOfMembers TINYINT NOT NULL,
+    `tid`         INT     NOT NULL,
+    `leaderId`    INT     NOT NULL,
+    `noOfMembers` TINYINT NOT NULL,
+    --
+    PRIMARY KEY (`tid`),
+    FOREIGN KEY (`leaderId`) REFERENCES students(`sid`)
 );
 
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (346, 4, 467);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (492, 3, 988);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (629, 3, 932);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (223, 3, 703);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (661, 4, 183);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (532, 2, 421);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (325, 4, 250);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (727, 4, 152);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (349, 4, 750);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (570, 2, 978);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (708, 3, 684);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (416, 4, 615);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (693, 2, 264);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (614, 3, 859);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (694, 2, 494);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (266, 2, 907);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (647, 3, 101);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (173, 3, 736);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (909, 2, 483);
-INSERT INTO teams (leaderId, noOfMembers, TID) VALUES (594, 2, 446);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (200, 100, 3);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (201, 103, 3);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (202, 106, 4);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (203, 110, 3);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (204, 113, 3);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (205, 116, 4);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (206, 120, 3);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (207, 123, 3);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (208, 126, 4);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (209, 130, 3);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (210, 133, 3);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (211, 136, 4);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (212, 140, 3);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (213, 143, 3);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (214, 146, 4);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (215, 150, 3);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (216, 153, 3);
+INSERT INTO teams (`tid`, `leaderId`, `noOfMembers`) VALUES (217, 156, 4);
