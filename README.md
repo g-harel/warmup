@@ -1,3 +1,11 @@
-# warmup
+Generate sql schema/fake initial data from `./insert queries`
 
-Generate sql setup from `./insert queries` with `./setup.sh`
+```shell
+./generate.sh
+```
+
+Output file: `schema.sql`.
+
+---
+
+Implemented queries can be found in `queries.sql`.
