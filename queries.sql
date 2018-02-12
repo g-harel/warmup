@@ -36,3 +36,9 @@ FROM   members
        JOIN students
          ON students.sid = members.sid
 WHERE  members.tid = 202;
+
+-- 6)
+SELECT * FROM teams JOIN demos WHERE demos.datetime = "2018-02-06 07:32:56" 
+
+-- 7)
+SELECT tid, 4-noOfMembers FROM teams WHERE noOfMembers < 4 
