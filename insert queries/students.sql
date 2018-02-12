@@ -11,7 +11,7 @@ INSERT INTO students (`sid`, `name`, `gender`, `email`) VALUES (100, 'Pooh de Ve
 INSERT INTO students (`sid`, `name`, `gender`, `email`) VALUES (101, 'Myranda Etty',           'F', 'metty1@unesco.org');
 INSERT INTO students (`sid`, `name`, `gender`, `email`) VALUES (102, 'Valene Christoffersen',  'F', 'vchristoffersen2@marketwatch.com');
 INSERT INTO students (`sid`, `name`, `gender`, `email`) VALUES (103, 'Hillary Schellig',       'F', 'hschellig3@omniture.com');
-INSERT INTO students (`sid`, `name`, `gender`, `email`) VALUES (104, 'Estell O'' Mahony',      'F', 'eo4@youku.com');
+INSERT INTO students (`sid`, `name`, `gender`, `email`) VALUES (104, 'Estell Mahony',          'F', 'eo4@youku.com');
 INSERT INTO students (`sid`, `name`, `gender`, `email`) VALUES (105, 'Teresina Stoppe',        'F', 'tstoppe5@umn.edu');
 INSERT INTO students (`sid`, `name`, `gender`, `email`) VALUES (106, 'Helen-elizabeth Gerber', 'F', 'hgerber6@netscape.com');
 INSERT INTO students (`sid`, `name`, `gender`, `email`) VALUES (107, 'Ivonne Biddell',         'F', 'ibiddell7@dmoz.org');
