@@ -38,7 +38,14 @@ FROM   members
 WHERE  members.tid = 202;
 
 -- 6)
-SELECT * FROM teams JOIN demos WHERE demos.datetime = "2018-02-06 07:32:56" 
+SELECT *
+FROM   teams
+       JOIN demos
+         ON teams.leaderId = demos.sid
+WHERE  demos.date = "2018-01-11";
 
 -- 7)
-SELECT tid, 4-noOfMembers FROM teams WHERE noOfMembers < 4 
+SELECT tid,
+       4 - noOfMembers as capacity
+FROM   teams
+WHERE  noOfMembers < 4;
