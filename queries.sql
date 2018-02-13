@@ -49,3 +49,18 @@ SELECT tid,
        4 - noOfMembers as capacity
 FROM   teams
 WHERE  noOfMembers < 4;
+
+-- 8)
+SELECT members.tid
+FROM students
+JOIN members ON students.sid = members.sid
+WHERE students.name = "Pooh de Verson" OR students.sid = "100";
+
+-- 9)
+SELECT sid
+FROM members
+WHERE tid = (SELECT members.tid
+	FROM students
+	JOIN members ON students.sid = members.sid
+	WHERE students.name = "Pooh de Verson" OR students.sid = "100");
+
