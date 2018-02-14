@@ -57,10 +57,10 @@ JOIN members ON students.sid = members.sid
 WHERE students.name = "Pooh de Verson" OR students.sid = "100";
 
 -- 9)
-SELECT sid
-FROM members
-WHERE tid = (SELECT members.tid
-	FROM students
-	JOIN members ON students.sid = members.sid
-	WHERE students.name = "Pooh de Verson" OR students.sid = "100");
+SELECT members.sid, students.name
+  FROM members JOIN students
+  ON students.sid = members.sid
+  WHERE tid = (SELECT members.tid
+                FROM students JOIN members ON students.sid = members.sid
+                WHERE students.name = '' OR students.sid = '100');
 
