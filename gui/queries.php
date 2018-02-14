@@ -112,14 +112,14 @@ $queriesWithInput = [
     FROM   members
     JOIN students
     ON students.sid = members.sid
-    WHERE  members.tid =" . $tid . ";",
+    WHERE  members.tid = '" . $tid . "';",
     
   //q6
   "SELECT *
     FROM   teams
     JOIN demos
     ON teams.leaderId = demos.sid
-    WHERE  demos.date = " . $date . ";", //2018-01-11
+    WHERE  demos.date = '" . $date . "';", //2018-01-11
 
   //q8
   "SELECT members.tid
