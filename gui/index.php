@@ -28,23 +28,32 @@
         margin: 4px 2px;
         cursor: pointer;
     }
+
     </style>
   </head>
 
   <body>
     <form action = "queries.php" method="post">
 
+        <h2>Click on the radio button next to the desired query</h2>
+
         <h1>Query without inputs  <button type ="submit">Query</button></h1>
 
         <p>Choose one of the following query (No input needed) and click query. (Refresh to remove Radio click under)</p>
 
+        <input type="radio" name="givenQ" value=-1>
+
         <select name="table">
-          <option value=-1>Other queries</option>
           <option value=0>1. Which student(s) is not a member of any team?</option>
           <option value=1>2. For each team, list its members.</option>
           <option value=2>3. Who was not present in the demo of a team?</option>
           <option value=3>4. List the teams which that have < 4 members.</option>
           <option value=4>7. For each team that is not complete (< 4 members), list the TID and the capacity to increase. (That is, if a team has 1 member, the capacity to increase would be 3).</option>
+          <option value=5>Display Students table</option>
+          <option value=6>Display Members table</option>
+          <option value=7>Display Demos table</option>
+          <option value=8>Display Teams table</option>
+          <option value=9>Display Projects table</option>
         </select>
 
       <br/><br/>

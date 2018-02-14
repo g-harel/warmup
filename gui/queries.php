@@ -1,9 +1,14 @@
 <?php
 
-$servername = "lzc353.encs.concordia.ca";
-$password = "Logmein2";
-$username = "lzc353_4";
-$db = "lzc353_4";
+// $servername = "lzc353.encs.concordia.ca";
+// $password = "Logmein2";
+// $username = "lzc353_4";
+// $db = "lzc353_4";
+
+$servername = "localhost";
+$password = "";
+$username = "root";
+$db = "db";
 
 $conn = mysqli_connect($servername, $username, $password, $db);
 
@@ -83,6 +88,21 @@ $queriesFromDropdown = [
     FROM   teams
     WHERE  noOfMembers < 4;",
 
+  //Students table
+  "SELECT * FROM students;",
+
+  //Members table
+  "SELECT * FROM members;",
+
+  //Demos table
+  "SELECT * FROM demos;",
+
+  //Teams table
+  "SELECT * FROM teams;",
+
+  //Projects table
+  "SELECT * FROM projects;",
+
 ];
 
 $queriesWithInput = [
@@ -117,15 +137,22 @@ $queriesWithInput = [
 
 ];
 
+if(isset($_POST['givenQ'])){
 
+  if($_POST['givenQ'] == -1){
+    $sql = $queriesFromDropdown[$_POST["table"]];
+  }
+  else{
+    $sql = $queriesWithInput[$_POST["givenQ"]];
+  }
 
-if(isset($_POST["table"]) && $_POST["table"] != -1){
-  $sql = $queriesFromDropdown[$_POST["table"]];
+}
+else{
+  echo "<h1>Please click on a radio button next to one of the query</h1>";
+  exit;
 }
 
-if(isset($_POST['givenQ'])) {
-  $sql = $queriesWithInput[$_POST["givenQ"]];
-}
+
 
 echo "<h3>" .$sql. "</h3>";
 
