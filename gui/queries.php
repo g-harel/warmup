@@ -1,6 +1,5 @@
 <?php
 
-
 $servername = "lzc353.encs.concordia.ca";
 $password = "Logmein2";
 $username = "lzc353_4";
@@ -44,7 +43,7 @@ if(isset($_POST["name9"])){
 }
 
 if(isset($_POST["sid9"])){
-  $sid9 = $_POST["name9"];
+  $sid9 = $_POST["sid9"];
 }
 
 

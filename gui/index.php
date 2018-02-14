@@ -43,8 +43,8 @@
           <option value=0>1. Which student(s) is not a member of any team?</option>
           <option value=1>2. For each team, list its members.</option>
           <option value=2>3. Who was not present in the demo of a team?</option>
-          <option value=3>4. List the teams which that have <4 members.</option>
-          <option value=4>7. For each team that is not complete (<4 members), list the TID and the capacity to increase. (That is, if a team has 1 member, the capacity to increase would be 3).</option>
+          <option value=3>4. List the teams which that have < 4 members.</option>
+          <option value=4>7. For each team that is not complete (< 4 members), list the TID and the capacity to increase. (That is, if a team has 1 member, the capacity to increase would be 3).</option>
         </select>
 
       <br/><br/>
@@ -64,12 +64,12 @@
       </div>
 
       <div>
-        <input type="radio" name="givenQ" value=2>8. Given a student Name or ID, find his/her team ID.<br>
-        <label>Student name(Ex: Pooh de Verson):</label><input type="text" name ="name8"/><br/><label>or student id Ex: 100):</label><input type ="text" name ="sid8"/>
+        <input type="radio" name="givenQ" value=2>8. Given a student Name OR ID, find his/her team ID.<br>
+        <label>Student name(Ex: Pooh de Verson):</label><input type="text" name ="name8"/><br/><label>or student id (Ex: 100):</label><input type ="text" name ="sid8"/>
       </div>
 
       <div>
-        <input type="radio" name="givenQ" value=3>9. Given a student Name or ID, find the names and SID of his/her teammates.<br>
+        <input type="radio" name="givenQ" value=3>9. Given a student Name OR ID, find the names and SID of his/her teammates.<br>
         <label>Student name(Ex: Pooh de Verson):</label><input type="text" name ="name9"/><br/><label>or student id (Ex: 100):</label><input type ="text" name ="sid9"/>
       </div>
     </form>
